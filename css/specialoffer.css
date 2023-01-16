@@ -1,0 +1,134 @@
+:root{
+  --main-color : #78909c;
+  --sub-color : #4b636e;
+  --border-color : #e0e0e0;
+  --border2-color : #9b9b9b;
+  --font-color : #686868;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.board_list {
+  width: 70%;
+  margin: 80px auto;
+  padding: 0 30px;
+  flex-wrap: wrap;
+  border-top:  2px solid var(--main-color) ;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.board_list li {
+  width: 500px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.board_list li a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.board_list li .img {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+
+.board_list li img {
+  width: 500px;
+  height: 300px;
+  transition: all 1s;
+}
+
+.board_list li img:hover {
+  /* width: 420px;
+  height: 270px; */
+  scale: 1.1;
+  opacity: 0.8;
+}
+
+.board_list li span {
+  color: var(--font-color);
+}
+
+.board_list li span.content {
+  margin-top: 10px;
+  color: var(--font-color);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.page_num {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-bottom: 50px;
+}
+
+.page_num li {
+  margin: 0 5px;
+}
+
+.page_num li span {
+  margin: 0 5px;
+}
+
+.page_num a {
+  text-decoration: none;
+  color: black;
+  margin: 0 5px;
+}
+
+/* -----------------------------specialoffer_view--------------------------------- */
+
+.board_list2 {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.board_list2 li img {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.board_list2 .view_content {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+.board_list2 .view_content span {
+  font-size: 16px;
+  
+}
+
+.board_list2 .view_content .hit_box {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  border-bottom: 1px solid var(--main-color);
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+
+
+/* -------------------------------specialoffer_form---------------------------------- */
+
+.write_msg ul li .col2 input {
+  border: none;
+}

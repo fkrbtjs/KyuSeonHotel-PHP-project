@@ -1,0 +1,215 @@
+:root{
+    --main-color : #78909c;
+    --sub-color : #4b636e;
+    --border-color : #e0e0e0;
+    --border2-color : #9b9b9b;
+    --font-color : #686868;
+}
+
+.main {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.main h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.main ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+.main ul li {
+    display: flex;
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 2px solid var(--border-color);
+}
+
+.main ul li img {
+    width: 400px;
+    height: 250px;
+    margin-right: 50px;
+}
+
+.main ul li span {
+    display: block;
+    margin-bottom: 13px;
+}
+
+.main ul li button {
+   margin-top: 60px;
+   width: 200px;
+   height: 40px;
+   border: 1px solid var(--main-color);
+   color: white;
+   background-color: var(--main-color);
+}
+
+.main ul li button:hover {
+   border: 1px solid var(--sub-color);
+   background-color: var(--sub-color);
+}
+
+/* -------------------------------reserve_form-------------------------------------- */
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.input_form {
+    width: 60%;
+    border-top: 1px solid var(--border2-color);
+    border-bottom: 1px solid var(--border2-color);
+    padding: 30px 0;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.input_form form {
+    width: 45%;
+   
+}
+
+.input_form form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input_form form input{
+    display: inline-block;
+    width: 80%;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border2-color);
+    font-size: 14px;
+}
+
+.input_form form textarea {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid var(--border2-color);
+    font-size: 14px;
+}
+
+.submit_box {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.submit {
+    width: 20%;
+    height: 40px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: white;
+    float: right;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.input_form .rate_box {
+    width: 45%;
+}
+
+.input_form ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.input_form .rate {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.input_form .rate li {
+    margin-bottom: 50px;
+}
+
+.input_form .rate li:last-child {
+    border-top: 1px solid var(--border2-color);
+    padding-top: 20px;
+}
+
+.input_form .rate .rate_detail {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.input_form .rate .rate_detail li {
+    margin: 10px 0;
+}
+
+.input_form .rate .rate_detail li:last-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+/* -------------------------reserve_view-------------------------------- */
+
+.reserve_list {
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.info_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 0 ;
+    border-top: 2px solid var(--main-color);
+}
+
+.reserve_list .info_box .room_img {
+    width: 45%;
+}
+
+.reserve_list .info_box .room_img img {
+    width: 100%;
+    height: 320px;
+}
+
+.reserve_list .info_box .reserve_info {
+    width: 45%;
+    line-height: 32px;
+}
+
+.reserve_list .info_box .reserve_info h2 {
+    margin: 10px 0;
+}
+
+.page_num {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.page_num a {
+    margin: 0 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.page_num b {
+    margin: 0 5px;
+}
+
+.submit:hover {
+    background-color: var(--sub-color);
+}
+
+
+
+
+
+

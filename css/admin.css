@@ -1,0 +1,139 @@
+:root{
+    --main-color : #78909c;
+    --sub-color : #4b636e;
+    --border-color : #e0e0e0;
+    --border2-color : #9b9b9b;
+    --font-color : #686868;
+  }
+  
+.admin_box {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.member_list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.member_list li  {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.member_list li:first-child {
+    background-color: var(--main-color);
+    color: white;
+    border-bottom: 2px solid var(--sub-color);
+}
+
+.member_list li div {
+    width: 14%;
+    text-align: center;
+}
+
+.member_list li form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.member_list li form div {
+    width: 14%;
+    text-align: center;
+}
+
+.member_list li form div input {
+    width: 50%;
+    border: 1px solid var(--border2-color);
+}
+
+.member_list li form div button {
+    width: 50%;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: white;
+}
+
+.member_list li form div button:hover {
+    background-color: var(--sub-color);
+}
+
+
+/* -------------------------------게시판----------------------------------  */
+
+
+.board_list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: right;
+}
+
+.board_list li  {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.board_list li:first-child {
+    background-color: var(--main-color);
+    color: white;
+    border-bottom: 2px solid var(--sub-color);
+}
+
+.board_list li div {
+    width: 15%;
+    text-align: center;
+}
+
+.board_list li .col4 {
+    width: 40%;
+}
+
+.board_list li form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.board_list li form .col4 {
+    width: 40%;
+}
+
+.board_list li form div {
+    width: 15%;
+    text-align: center;
+}
+
+.board_list li form div input {
+    width: 50%;
+    border: 1px solid var(--border2-color);
+}
+
+.board_list button {
+    margin: 20px 0 0 10px;
+    width: 15%;
+    height: 30px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: white;
+}
+
+.board_list button:hover {
+    background-color: var(--sub-color);
+}
+

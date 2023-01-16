@@ -1,0 +1,279 @@
+:root{
+  --main-color : #78909c;
+  --sub-color : #4b636e;
+  --border-color : #e0e0e0;
+  --border2-color : #9b9b9b;
+  --font-color : #686868;
+}
+
+html , body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* ----------------------header-------------------------------- */
+header {
+width: 100%;
+height: 120px;
+border-bottom: 1px solid var(--border-color);  
+}
+
+header .top {
+  height: 40px;
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .top .logo {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+header .top .logo a {
+  color: black;
+  text-decoration: none;
+}
+
+header .top .logo i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+header .top .quick_nav {
+  display: flex;
+  list-style-type: none;
+}
+
+
+header .top .quick_nav li {
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+header .top .quick_nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .top .quick_nav li a:hover {
+ color: var(--main-color);
+}
+
+
+
+header .bottom {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .bottom .main_nav {
+  display: flex;
+  list-style-type: none;
+}
+
+header .bottom .main_nav li {
+  margin: 0 40px;
+  padding: 0 40px;
+  font-size: 20px;
+}
+
+header .bottom .main_nav li a:hover{
+  color: var(--main-color);
+}
+
+header .bottom .main_nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ----------------------main-------------------------------- */
+
+section {
+  flex: 1;
+}
+
+.slideshow {
+  background-color: black;
+  min-width: 960px;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow_slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+
+/* 4장의 이미지를 기준점으로 모두 이동한다 */ 
+
+.slideshow_slides a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.slideshow_slides a img {
+  width: 100%;
+  height: 70vh;   
+}
+
+/* 네비게이션 네브를 중앙에 배치시킨다 */
+
+.slideshow_nav a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 60px;
+  color: white;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}
+
+.slideshow_nav a.prev {
+  margin-left: -650px;
+}
+
+.slideshow_nav a.next {
+  margin-left: 600px;
+}
+
+/* indicator를 슬라이드쇼 가운데 아래에 배치 */
+
+.indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  text-align: center;
+}
+
+.indicator a {
+  color: white;
+  opacity: 0.5;
+  margin: 5px;
+}
+
+.indicator a.active {
+  opacity: 0.8;
+}
+
+.introduce {
+  margin: 50px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+section img {
+  width: 400px;
+  height: 250px;
+  transition: all 1s;
+
+} 
+
+
+
+section .boxes {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+section .box {
+  width: 400px;
+  border: 1px solid var(--line-color);
+  margin: 30px;
+  border-radius: 5px;
+}
+
+section .box img:hover{
+  scale: 1.1;
+}
+  
+section .box .info {
+  list-style-type: none;
+  padding: 0;
+}
+
+section .box .info li {
+  padding: 5px 0;
+  font-size: 14px;
+  color: var(--font-color);
+}
+
+section .box .info li:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+section .box .signup {
+  text-align: center;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+}
+
+section .box .signup:hover {
+  background-color: #0064cfe3;
+}
+
+section .box .signup_first {
+  text-align: center;
+  background-color: white;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+}
+
+
+/* ----------------------footer-------------------------------- */
+
+footer {
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  font-size: 14px;
+  padding: 3px;
+}
+
+footer ul li:first-child{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+footer ul li a:hover {
+  color: var(--main-color);
+}
