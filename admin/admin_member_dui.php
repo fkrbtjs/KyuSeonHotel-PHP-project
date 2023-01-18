@@ -55,7 +55,7 @@
                
                $num = $_POST["item"][$i];
                
-               $sql = "select * from board where num = $num";
+               $sql = "select * from image_board where num = $num";
                $result = mysqli_query($con, $sql);
                $row = mysqli_fetch_array($result);
                
@@ -66,7 +66,7 @@
                   unlink($file_path);
                }
                
-               $sql = "delete from board where num = $num";
+               $sql = "delete from image_board where num = $num";
                mysqli_query($con, $sql);
             }   
          break;
