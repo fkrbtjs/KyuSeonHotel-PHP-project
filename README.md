@@ -1,7 +1,7 @@
 # KyuSeonHotel-PHP-project
 
 ## 개요
-PHP,JavaScript,CSS,HTML을 사용하여 호텔사이트 제작  
+PHP,JavaScript,CSS를 사용하여 호텔사이트 제작  
 
 ## 개발 환경
 | Category | Content |
