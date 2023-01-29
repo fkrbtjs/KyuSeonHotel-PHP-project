@@ -11,7 +11,7 @@
       }
     }
 
-    // 우리가 원하는 테이블 없다면
+    // 원하는 테이블 없다면
     if($flag == false){
       switch($table_name){
         // 회원테이블
@@ -59,7 +59,7 @@
               primary key(num)
             ) ENGINE=InnoDB DEFAULT CHARSET=utf8;";
             break; 
-
+        // 예약테이블
         case 'reservation':
           $sql = "create table if not exists reservation (
             num int not null auto_increment,
