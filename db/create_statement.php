@@ -8,8 +8,4 @@
  create_table($con,"message");
  create_table($con,"reservation");
 
- //프로시져
-
- //트리거
-
 ?>
